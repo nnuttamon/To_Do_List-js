@@ -1,6 +1,6 @@
 //Selectors
 const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-button"); //.addEventListener('click', addTodo);
+const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 
 //Event Listeners
@@ -25,11 +25,6 @@ function addTodo(event) {
     completedButton.innerHTML = '<i class="fa-solid fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
-    //Event listeners for check button
-    //completedButton.addEventListener('click', addCheck);
-    //function addCheck(check) {
-    //alert('click');
-    //}
     //CHECK TRASH BUTTON
     const trashButton = document.createElement("button");
     trashButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
@@ -45,8 +40,6 @@ function addTodo(event) {
     //check button activate
     todoList.addEventListener('click',todoCheck);
     function todoCheck(event) {
-        //const completedButton = event.target;
-        //const trashButton = event.target;
         const clicked = event.target;
         if (clicked.classList.contains("complete-btn")) {
             alert('Complete');
