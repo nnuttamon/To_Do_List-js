@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #e692d8, #763391);
+    color: rgb(63, 62, 63);
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.2rem;
+}
+
+header,
+form {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, .todo-button {
+background-color: white;
+color: rgb(124, 1, 118);
+font-weight: bolder;
+border: none; 
+padding: 2px 8px;
+font-size: 0.8rem;
+}
+.todo-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-button:hover {
+    background-color: #da7dca;
+}
+
+.todo-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, 
+.complete-btn {
+    background-color: #da7dca;
+    color: rgb(124, 1, 118);
+    padding: 0.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trash-btn:hover, 
+.complete-btn:hover {
+    background-color: white;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
